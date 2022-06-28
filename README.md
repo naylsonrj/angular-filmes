@@ -7,7 +7,7 @@ Angular Filmes é uma aplicação que consome API: The Movie DB API
 
 ## 💻 Live Demo
 
-✔ Github Pages: https://jancobh.github.io/Angular-Movies/ (new with Angular 14 + improvements + still working on it).
+✔ Github Pages: https://naylsonrj.github.io/angular-filmes/ 
 
 
 ## 📋 Prerequisites
@@ -19,10 +19,10 @@ Angular Filmes é uma aplicação que consome API: The Movie DB API
 ## 🔧 Installing
 
 ```bash
-git clone https://github.com/JancoBH/Angular-Movies.git
-cd Angular-Movies
+git clone https://github.com/naylsonrj/angular-filmes.git
+cd angular-filmes
 npm install
-ng serve and enjoy it
+ng serve 
 ```
 Go to Angular-Movies\src\environments and change ```environments.ts``` and ```environments.prod.ts``` theMovieDBApi object prop with your own The Movie DB API Key.
 
@@ -31,14 +31,14 @@ Go to Angular-Movies\src\environments and change ```environments.ts``` and ```en
 * <a href="https://angular.io/" target="_blank">Angular</a> 14.0.3 - The Web Framework used
 * <a href="https://material.angular.io/" target="_blank">Angular Material</a> 14.0.3 - The UI Component Library
 
-## 📦 Deployment
-
-You can check <a href="https://angular.io/guide/deployment" target="_blank">Angular Deployment guide</a> to learn how to deploy this project.
-
 ## 📄 License
 
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 
----
-🧑‍💻 Developed by [JancoBH](https://github.com/JancoBH)
-# angular-filmes
+
+## Author
+
+👤 **Naylson Costa**
+
+* Github: [@naylsonrj](https://github.com/naylsonrj)
+* LinkedIn: [@naylsoncosta](https://linkedin.com/in/naylsoncosta)
