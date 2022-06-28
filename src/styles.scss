@@ -1,9 +1,11 @@
 @import '@angular/material/prebuilt-themes/deeppurple-amber.css';
 @import "src/app/styles/variables.scss";
 
-/* General */
+/* Geral */
 
-*,::after,::before {
+*,
+::after,
+::before {
   box-sizing: border-box;
   //padding: 0;
   //margin: 0;
@@ -13,7 +15,7 @@ html {
   scroll-behavior: smooth;
 }
 
-body{
+body {
   min-height: 100vh;
   font-family: Roboto, 'Helvetica Neue', sans-serif;
   background: #333333;
@@ -47,10 +49,17 @@ a {
   align-items: center;
 }
 
-.default-margin-bottom {margin-bottom: 0.8rem;}
-.default-padding-bottom {padding-bottom: 0.8rem;}
+.default-margin-bottom {
+  margin-bottom: 0.8rem;
+}
 
-.hidden {display: none;}
+.default-padding-bottom {
+  padding-bottom: 0.8rem;
+}
+
+.hidden {
+  display: none;
+}
 
 /* Loading */
 
@@ -73,27 +82,26 @@ a {
   height: 0;
   border-style: solid;
   border-width: 0 0 50px 50px;
-  border-color: transparent  transparent #df1a54 transparent ;
+  border-color: transparent transparent #df1a54 transparent;
   margin: -50px auto 0;
   animation: shk2 1s ease-in-out infinite alternate;
 }
 
-/** animation starts here **/
+/** Animation css **/
 @keyframes shk1 {
   0% {
     transform: rotate(-360deg);
   }
 
-  100% {
-  }
+  100% {}
 }
 
 @keyframes shk2 {
   0% {
     transform: rotate(360deg);
   }
-  100% {
-  }
+
+  100% {}
 }
 
 .lt {
@@ -105,7 +113,7 @@ a {
   letter-spacing: 10px;
 }
 
-.center{
+.center {
   text-align: center;
 }
 
@@ -152,5 +160,4 @@ a {
 }
 
 // xl
-@media screen and (min-width: 1920px) and (max-width: 5000px) {
-}
+@media screen and (min-width: 1920px) and (max-width: 5000px) {}

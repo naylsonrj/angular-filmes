@@ -7,8 +7,10 @@ export class ImgMissingDirective {
   constructor(private el: ElementRef, private renderer: Renderer2) {}
 
   @HostListener('error')
+  // CARREGA IMG DE ERRO
   private onError() {
     this.renderer.removeAttribute(this.el.nativeElement, 'srcset');
     this.renderer.setAttribute(this.el.nativeElement, 'src', './assets/img/fallback.jpg');
+    
   }
 }
