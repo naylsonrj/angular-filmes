@@ -6,7 +6,7 @@ import {MoviesService} from '../../services/movies.service';
 import {ActivatedRoute} from '@angular/router';
 import {DomSanitizer} from '@angular/platform-browser';
 import {MatDialog} from '@angular/material/dialog';
-import {SeoService} from '../../../../core/services/seo.service';
+
 import {MediaMatcher} from '@angular/cdk/layout';
 import {take} from 'rxjs/operators';
 
@@ -36,7 +36,7 @@ export class MovieDetailComponent implements OnInit, OnDestroy {
     private route: ActivatedRoute,
     private sanitizer: DomSanitizer,
     public dialog: MatDialog,
-    private seo: SeoService,
+ 
     public trailerDialog: MatDialog,
     changeDetectorRef: ChangeDetectorRef,
     media: MediaMatcher
@@ -68,7 +68,7 @@ export class MovieDetailComponent implements OnInit, OnDestroy {
     this._moviesService.getMovie(id).pipe(take(1)).subscribe(
       movie => {
         this.movie = movie;
-        this.generateSeo();
+        
       }, () => {},
       () => this.isLoading = false
     );
@@ -104,15 +104,7 @@ export class MovieDetailComponent implements OnInit, OnDestroy {
     );
   }
 
-  // Seo tags
-  generateSeo() {
-    this.seo.generateTags({
-      title: `${this.movie.title}`,
-      description: `${this.movie.overview}`,
-      image: `https://image.tmdb.org/t/p/w780/${this.movie.backdrop_path}`,
-      slug: 'movie'
-    });
-  }
+
 
   openDialog(): void {
     const dialogRef = this.trailerDialog.open(this.matTrailerDialog, {});

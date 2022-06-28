@@ -8,7 +8,7 @@ import { HomeComponent } from './features/home/home.component';
 import { MoviesService } from './features/movies/services/movies.service';
 import { environment } from '../environments/environment';
 import {OnTVService} from './features/tv-shows/services/onTV.service';
-import {SeoService} from './core/services/seo.service';
+
 
 import {BrowserModule} from '@angular/platform-browser';
 import {AppRoutingModule} from './app-routing.module';
@@ -41,7 +41,7 @@ import {SwiperModule} from 'swiper/angular';
   providers: [
     MoviesService,
     OnTVService,
-    SeoService
+    
   ],
   bootstrap: [AppComponent]
 })

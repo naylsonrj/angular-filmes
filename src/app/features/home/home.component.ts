@@ -2,7 +2,7 @@ import {Component, OnInit} from '@angular/core';
 
 import { MoviesService } from '../movies/services/movies.service'
 import {OnTVService} from '../tv-shows/services/onTV.service';
-import {SeoService} from '../../core/services/seo.service';
+
 import SwiperCore, { Pagination, SwiperOptions } from 'swiper';
 import {take} from 'rxjs/operators';
 import {MovieModel} from '../movies/models/movie.model';
@@ -44,16 +44,10 @@ export class HomeComponent implements OnInit {
   constructor(
     private moviesService: MoviesService,
     private onTvService: OnTVService,
-    private seo: SeoService
+    
   ) {}
 
   ngOnInit() {
-
-    this.seo.generateTags({
-      title: 'Angular Movies and Series',
-      description: 'Movie and Series Home Page',
-      image: 'https://jancobh.github.io/Angular-Movies/background-main.jpg'
-    });
 
     this.getMovies('now_playing', 1);
     this.getTVShows('airing_today', 1);
