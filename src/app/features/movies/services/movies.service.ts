@@ -1,4 +1,4 @@
-import { Injectable } from '@angular/core';
+import {Injectable} from '@angular/core';
 import {Observable} from 'rxjs';
 import {HttpClient} from '@angular/common/http';
 import {environment} from '../../../../environments/environment';
@@ -14,8 +14,9 @@ export class MoviesService {
   constructor(private http: HttpClient) {
     this.baseUrl = 'https://api.themoviedb.org/3/';
     this.apiKey = environment.theMovieDBApi;
-    this.language = 'en-US';
+    this.language = 'pt-BR';
     this.region = 'US'
+    
   }
 
   getMovies(type: string, page: number): Observable<any> {
@@ -43,7 +44,7 @@ export class MoviesService {
   }
 
   getMovieReviews(id: string): Observable<any> {
-    return this.http.get(`${this.baseUrl}movie/${id}/reviews?api_key=${this.apiKey}`)
+    return this.http.get(`${this.baseUrl}movie/${id}/reviews?api_key=${this.apiKey}&language=${this.language}&region=${this.region}`)
   }
 
   getMovieCredits(id: string): Observable<any> {
@@ -59,7 +60,7 @@ export class MoviesService {
   }
 
   getPersonDetail(id: string): Observable<any> {
-    return this.http.get(`${this.baseUrl}person/${id}?api_key=${this.apiKey}`)
+    return this.http.get(`${this.baseUrl}person/${id}?api_key=${this.apiKey}&language=${this.language}&region=${this.region}`)
   }
 
   getPersonExternalData(id: string) {
