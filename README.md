@@ -10,7 +10,7 @@ Angular Filmes é uma aplicação que consome API: The Movie DB API
 ✔ Github Pages: https://naylsonrj.github.io/angular-filmes/ 
 
 
-## 📋 Prerequisites
+## 📋 Pre requisites
 
 * <a href="https://nodejs.org/es/" target="_blank">Node JS</a> - You need it to use npm
 * <a href="https://angular.io/cli" target="_blank">Angular CLI</a> - Command-line interface tool needed to manage Angular applications
