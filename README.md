@@ -33,7 +33,7 @@ Go to Angular-Movies\src\environments and change ```environments.ts``` and ```en
 
 ## 📄 License
 
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details. =]
 
 
 ## Author
