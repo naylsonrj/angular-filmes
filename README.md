@@ -2,7 +2,7 @@
 
 ## 🚀 Getting Started!!!!
 
-Angular Filmes é uma aplicação que consome API: The Movie DB API
+Angular Filmes é uma aplicação que consome API: The Movie DB API - atualizar
 
 
 ## 💻 Live Demo
